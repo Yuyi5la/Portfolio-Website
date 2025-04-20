@@ -75,11 +75,7 @@ html{
   }
   
   .navbar-toggler {
-    background-color: #0996e7; /* Change button bg */
-  }
-  
-  .navbar-toggler {
-    background-color: white; /* Change button bg */
+    background-color: rgba(0, 0, 0, 0.3); /* Change button bg */
   }
   
   .navbar-toggler-icon {
@@ -88,8 +84,41 @@ html{
   
 
 .navbar a:hover {
-    color: #00d4ff;
+    color: #78ffb5;
 }
+/* Hamburger icon animation */
+.custom-toggler-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 30px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #00d4ff;
+  margin: 3px 0;
+  transition: 0.4s ease-in-out;
+  border-radius: 2px;
+}
+
+.custom-toggle.open .top-bar {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.custom-toggle.open .middle-bar {
+  opacity: 0;
+}
+
+.custom-toggle.open .bottom-bar {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+
+
 
 .home {
     display: flex;
