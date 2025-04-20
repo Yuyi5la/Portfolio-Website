@@ -1,5 +1,5 @@
 // Animation effect
-const words = ["Web Developer", "Machine Learning Engineer","Data Engineer", "Freelancer"];
+const words = ["Web Developer", "ML Engineer","Data Engineer", "Freelancer"];
 let currentWordIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false;
