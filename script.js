@@ -53,3 +53,16 @@ navbarToggler.addEventListener('click', () => {
     });
   });
 
+const toggler = document.querySelector('.custom-toggle');
+  const nav = document.getElementById('navbarNav');
+
+  toggler.addEventListener('click', () => {
+    toggler.classList.toggle('open');
+  });
+
+  // Optional: remove 'open' when a nav link is clicked (for mobile)
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      toggler.classList.remove('open');
+    });
+  });
