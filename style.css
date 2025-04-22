@@ -42,16 +42,16 @@ html{
 
 /* Navbar styling */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent black */
-    backdrop-filter: blur(10px); /* Blur effect */
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 1rem 15%;
-    z-index: 1000;
-  }
-  
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0.5rem 1rem;
+}
+
   /* Navbar brand styling */
   .navbar-brand {
     font-size: 1.8rem;
