@@ -116,6 +116,31 @@ html{
 .custom-toggle.open .bottom-bar {
   transform: translateY(-8px) rotate(-45deg);
 }
+/* Fix nav link alignment on mobile (collapsed) */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    padding-left: 0;
+  }
+
+  .navbar-nav {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .nav-item {
+    text-align: left;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .navbar-brand {
+    padding-left: 0;
+    margin-left: 0;
+  }
+}
 
 .home {
   position: relative;
