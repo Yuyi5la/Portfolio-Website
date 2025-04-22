@@ -117,47 +117,60 @@ html{
   transform: translateY(-8px) rotate(-45deg);
 }
 
-
-
-
 .home {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    padding-top: 80px; /* for navbar space */
-    overflow-x: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-top: 80px; /* for navbar space */
+  overflow: hidden;
+}
 
+.bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  opacity: 0.5; /* Adjust for desired darkness */
+  pointer-events: none; /* Allows clicks to pass through */
+}
+
+.home-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
 }
 
 .home-content h1 {
-    font-size: 4rem;
-    margin-bottom: 0.5rem;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
 }
-.home-content h1 span{
-    color:#00d4ff;
+.home-content h1 span {
+  color: #00d4ff;
 }
 .home-content h3 {
-    font-size: 2.5rem;
-    
+  font-size: 2.5rem;
 }
-.home-content h3 span{
-    color: #00d4ff;
+.home-content h3 span {
+  color: #00d4ff;
 }
 .cursor {
-    color: #00d4ff;
-    animation: blink 0.7s infinite;
+  color: #00d4ff;
+  animation: blink 0.7s infinite;
 }
 
 @keyframes blink {
-    0%, 50% {
-        opacity: 1;
-    }
-    51%, 100% {
-        opacity: 0;
-    }
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0;
+  }
 }
-
 
 .about {
     display: flex;
@@ -260,16 +273,30 @@ html{
     }
 }
 
+#projects {
+  background-color: #000; /* optional dark background */
+  padding: 60px 20px 10px 20px; 
+}
 .sub-title{
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 50px;
+    margin-bottom: 1rem;
+    text-align: center;
+    
 }
+
 .sub-title span{
     color: #00d4ff;
 }
+.work-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -340,6 +367,8 @@ html{
     background: #78ffb5;
     color: #000;
   }
+  
+
   
   
   
