@@ -33,12 +33,6 @@ html{
 
 }
 
-.logo {
-    color: #00d4ff;
-    font-size: 2rem;
-    font-weight: bold;
-    text-decoration: none;
-}
 
 /* Navbar styling */
 .navbar {
@@ -160,7 +154,7 @@ html{
   height: 100%;
   object-fit: cover;
   z-index: 0;
-  opacity: 0.3; /* Adjust for desired darkness */
+  opacity: 0.2; /* Adjust for desired darkness */
   pointer-events: none; /* Allows clicks to pass through */
 }
 
